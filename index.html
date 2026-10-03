@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website — home page.">
+  <title>Home | My Personal Site</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">My Site</a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <p class="lead">A web developer who enjoys building simple, fast and accessible websites.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="about.html">About me</a>
+          <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>What I do</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Web design</h3>
+          <p>Clean, responsive layouts that look good on phones, tablets and desktops.</p>
+        </article>
+        <article class="card">
+          <h3>Front-end development</h3>
+          <p>Semantic HTML, modern CSS and plain JavaScript without unnecessary bloat.</p>
+        </article>
+        <article class="card">
+          <h3>Accessibility</h3>
+          <p>Sites that everyone can use, including people using keyboards and screen readers.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span class="js-year">2026</span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
