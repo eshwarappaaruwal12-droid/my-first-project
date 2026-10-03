@@ -1,0 +1,14 @@
+{
+  "name": "my-first-project",
+  "version": "1.0.0",
+  "description": "A simple, responsive personal website built with HTML, CSS and JavaScript.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
