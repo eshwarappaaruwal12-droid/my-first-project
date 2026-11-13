@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="360" height="100" viewBox="0 0 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="stroke0_0_24" fill="white">
+<path d="M360 50C360 77.6142 279.411 100 180 100C80.5887 100 0 77.6142 0 50C0 22.3858 80.5887 0 180 0C279.411 0 360 22.3858 360 50Z"/>
+</mask>
+<ellipse id="Contour" cx="180" cy="50" rx="180" ry="50" stroke-width="2" stroke="white" stroke-opacity="0.35" mask="url(#stroke0_0_24)"/>
+</svg>

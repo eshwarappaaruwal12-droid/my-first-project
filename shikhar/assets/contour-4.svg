@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="300" height="160" viewBox="0 0 300 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="stroke0_0_26" fill="white">
+<path d="M300 80C300 124.183 232.843 160 150 160C67.1573 160 0 124.183 0 80C0 35.8172 67.1573 0 150 0C232.843 0 300 35.8172 300 80Z"/>
+</mask>
+<ellipse id="Contour" cx="150" cy="80" rx="150" ry="80" stroke-width="2" stroke="white" stroke-opacity="0.35" mask="url(#stroke0_0_26)"/>
+</svg>

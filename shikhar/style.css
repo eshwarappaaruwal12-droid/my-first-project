@@ -1,0 +1,256 @@
+/* Arth Email Signature V4 — Shikhar Parekh — 700×200
+   Values taken directly from the Figma file (node 2738:2). */
+
+:root {
+  --arth-green: #a3c553;
+  --arth-dark: #16391c;
+  --arth-muted: #4a5a4c;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Canvas ---------- */
+.signature {
+  position: relative;
+  width: 700px;
+  height: 200px;
+  overflow: hidden;
+  background: var(--arth-green);
+}
+
+.signature > * {
+  position: absolute;
+}
+
+/* ---------- Background contours (rotated 12°) ---------- */
+.contour {
+  display: block;
+  max-width: none;
+  transform: rotate(12deg);
+}
+.contour-1 { left: 395.61px;  top: -37.91px; width: 520px; height: 180px; }
+.contour-2 { left: 440.64px;  top: -25.79px; width: 440px; height: 140px; }
+.contour-3 { left: 485.67px;  top: -13.67px; width: 360px; height: 100px; }
+.contour-4 { left: -179.92px; top: -80.56px; width: 300px; height: 160px; }
+.contour-5 { left: -133.84px; top: -58.33px; width: 220px; height: 110px; }
+
+/* ---------- White card ---------- */
+.card {
+  left: 0;
+  top: 90px;
+  width: 700px;
+  height: 110px;
+  background: var(--white);
+  border-radius: 44px 44px 0 0;
+}
+
+/* ---------- Profile photo ---------- */
+.profile-photo {
+  left: 297px;
+  top: 19px;
+  width: 106px;
+  height: 106px;
+  display: block;
+}
+
+/* ---------- Floating shapes ---------- */
+.float-circle { display: block; }
+.float-circle-1 { left: 262px; top: 108px; width: 16px; height: 16px; }
+.float-circle-2 { left: 436px; top: 36px;  width: 10px; height: 10px; }
+
+.float-square {
+  left: 432.54px;
+  top: 92.38px;
+  width: 18px;
+  height: 18px;
+  background: var(--arth-dark);
+  border-radius: 5px;
+  transform: rotate(-20deg);
+}
+
+.float-triangle {
+  left: 245.92px;
+  top: 41.83px;
+  width: 16px;
+  height: 14px;
+  transform: rotate(15deg);
+}
+.float-triangle img {
+  position: absolute;
+  top: 0;
+  left: 6.7%;
+  right: 6.7%;
+  bottom: 25%;
+  width: 86.6%;
+  height: 75%;
+  display: block;
+}
+
+/* ---------- Arth logo ---------- */
+.logo {
+  left: 26px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5.542px;
+  height: 26px;
+}
+
+/* Logo mark: textured image clipped by the Union shape */
+.logo-mark {
+  position: relative;
+  flex-shrink: 0;
+  width: 25.9375px;
+  height: 26px;
+  overflow: hidden;
+  /* Mask = assets/logo-mask.svg embedded as a data URI so it also works when
+     the page is opened directly from disk (file:// blocks external masks). */
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBvdmVyZmxvdz0idmlzaWJsZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyIgd2lkdGg9IjI1LjkzNzUiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNS45Mzc1IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBpZD0iVW5pb24iIGQ9Ik0xMy4zMDM3IDAuMDAzOTA2MjVDMjAuMzExMiAwLjE4MjA4OCAyNS45Mzc1IDUuOTMyNjMgMjUuOTM3NSAxM0wyNS45MzI2IDEzLjMzNTlDMjUuNzU0OSAyMC4zNjAzIDIwLjAxOSAyNS45OTk5IDEyLjk2ODggMjZMMTIuNjMzOCAyNS45OTYxQzUuNzM3NTMgMjUuODIwOSAwLjE3ODgzOCAyMC4yNDg4IDAuMDAzOTA2MjUgMTMuMzM1OUwwIDEzQzAgNS44MjAzMSA1LjgwNjM1IDAgMTIuOTY4OCAwTDEzLjMwMzcgMC4wMDM5MDYyNVpNMTMuMDkwOCAyMi42OTA0QzEyLjY5MTcgMjMuMDkzNyAxMi4zMjAzIDIzLjUwMzEgMTEuOTc5NSAyMy45MTQxQzEyLjMwNTQgMjMuOTQzNCAxMi42MzUyIDIzLjk2MTkgMTIuOTY4OCAyMy45NjE5QzEzLjM4ODIgMjMuOTYxOSAxMy44MDE4IDIzLjkzNDggMTQuMjA5IDIzLjg4ODdDMTMuODM5OSAyMy40NjQ1IDEzLjQ2ODIgMjMuMDY2OCAxMy4wOTA4IDIyLjY5MDRaTTcuNjM1NzQgMTguNzUyQzYuOTMyNDggMTkuNDQ0MyA2LjIyMDc5IDIwLjE4NTggNS40Nzk0OSAyMC45ODA1QzYuNjc3NTEgMjIuMTExNSA4LjEyODE2IDIyLjk3NTUgOS43MzkyNiAyMy40NzQ2QzEwLjI3MzEgMjIuNzQzOCAxMC44OTE3IDIyLjAyMTUgMTEuNTc4MSAyMS4zMjIzQzEwLjM5NTYgMjAuMzU2OCA5LjExNTI1IDE5LjUzNTUgNy42MzU3NCAxOC43NTJaTTE4LjI5MzkgMTguNzMxNEMxNy44MTcgMTkuMDAzMyAxNy4zNDc1IDE5LjI5MjYgMTYuODg4NyAxOS41OTU3QzE2LjA3ODEgMjAuMTMxMyAxNS4zMDgxIDIwLjcwODEgMTQuNTkyOCAyMS4zMDk2QzE1LjIyMTEgMjEuOTQwNyAxNS44MzYgMjIuNjI5IDE2LjQ0OTIgMjMuMzg5NkMxNy45NTk1IDIyLjg4MDkgMTkuMzIyIDIyLjA1MTkgMjAuNDU3IDIwLjk4MDVDMTkuNzA5MiAyMC4xNzY4IDE4Ljk5NjcgMTkuNDI5MiAxOC4yOTM5IDE4LjczMTRaTTEyLjgxODQgMTQuNTE5NUMxMS41Mzk1IDE1LjMzNDcgMTAuMzYzIDE2LjI0NzIgOS4yMDExNyAxNy4yODEyQzEwLjYxNzkgMTguMDcwMSAxMS44ODYzIDE4LjkyMDggMTMuMDgwMSAxOS45MjA5QzEzLjkxNzkgMTkuMjAxNyAxNC44MTk5IDE4LjUxOTcgMTUuNzY0NiAxNy44OTU1QzE2LjA4OTEgMTcuNjgxMiAxNi40MTk0IDE3LjQ3MiAxNi43NTQ5IDE3LjI3MDVDMTUuNjEwOCAxNi4yNDA1IDE0LjQ0ODcgMTUuMzI1OCAxMy4xNjUgMTQuNDkzMkMxMy4xMTUgMTQuNDYwNyAxMy4wNjQxIDE0LjQyOTcgMTMuMDEzNyAxNC4zOTc1QzEyLjk0ODQgMTQuNDM4MiAxMi44ODMgMTQuNDc4MyAxMi44MTg0IDE0LjUxOTVaTTIuNTkyNzcgMTYuNDQ3M0MyLjk1MDQ2IDE3LjUzMDcgMy40NzA5NSAxOC41Mzg2IDQuMTI2OTUgMTkuNDQyNEM0LjY2MDQ4IDE4Ljg3MjUgNS4xODI4NiAxOC4zMjM2IDUuNzA0MSAxNy43OTc5QzQuNzUyNDMgMTcuMzU2MiAzLjcyMTU4IDE2LjkxMjkgMi41OTI3NyAxNi40NDczWk0yMy4yNzkzIDE2LjYzOTZDMjIuMjU0NyAxNi45MTI3IDIxLjIxOSAxNy4yOTEzIDIwLjE5OTIgMTcuNzU1OUMyMC43Mjk4IDE4LjI5NDQgMjEuMjYzOSAxOC44NTU4IDIxLjgxMDUgMTkuNDQxNEMyMi40MjczIDE4LjU5MTUgMjIuOTI0NyAxNy42NDk5IDIzLjI3OTMgMTYuNjM5NlpNMi40NDUzMSAxMC4wMzUyQzIuMTgxNjkgMTAuOTc4MiAyLjAzODA5IDExLjk3MjEgMi4wMzgwOSAxM0MyLjAzODA5IDEzLjM1MDggMi4wNTU3NyAxMy42OTc3IDIuMDg3ODkgMTQuMDRDNC4wMzI3NCAxNC44MjMyIDUuNzM2NzIgMTUuNTQyOCA3LjI2ODU1IDE2LjI4MzJDOC40NzYzOCAxNS4xNjU4IDkuNzA1MDQgMTQuMTU4OSAxMS4wMzgxIDEzLjI1MkM4Ljc2ODI0IDEyLjA2MDMgNi4wMzk0MiAxMS4wMTg5IDIuNDQ1MzEgMTAuMDM1MlpNMjMuNTczMiAxMC4zNDE4QzIwLjAzODggMTEuMTU0IDE3LjMwOTggMTIuMTA5MiAxNS4wMDQ5IDEzLjI3NTRDMTYuMzAxNCAxNC4xNzUzIDE3LjQ4NSAxNS4xNTcgMTguNjQ1NSAxNi4yMzkzQzIwLjMxNzcgMTUuNDEyOSAyMi4wNjgxIDE0Ljc3NTggMjMuODAzNyAxNC40MjI5QzIzLjg2MzkgMTMuOTU3IDIzLjg5OTQgMTMuNDgyNCAyMy44OTk0IDEzQzIzLjg5OTQgMTIuMDgyOSAyMy43ODQ3IDExLjE5MjkgMjMuNTczMiAxMC4zNDE4Wk0xMi45Njg4IDIuMDM4MDlDOC42ODIyNyAyLjAzODA5IDQuOTY5MzUgNC41MTQ4NyAzLjE3ODcxIDguMTIyMDdDNy4zMTk1MiA5LjI2NzQ2IDEwLjQyIDEwLjUxMzkgMTMuMDI4MyAxMi4wMjA1QzE1LjY5NSAxMC41MjM4IDE4LjgxMzIgOS4zNjE0OSAyMi44OTM2IDguNDA4MkMyMS4xNjAzIDQuNjQ2ODggMTcuMzY3MyAyLjAzODE2IDEyLjk2ODggMi4wMzgwOVoiIGZpbGw9IiMxOTQ3MUEiLz4KPC9zdmc+Cg==") no-repeat 0 0 / 25.9375px 26px;
+          mask: url("data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBvdmVyZmxvdz0idmlzaWJsZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyIgd2lkdGg9IjI1LjkzNzUiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNS45Mzc1IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBpZD0iVW5pb24iIGQ9Ik0xMy4zMDM3IDAuMDAzOTA2MjVDMjAuMzExMiAwLjE4MjA4OCAyNS45Mzc1IDUuOTMyNjMgMjUuOTM3NSAxM0wyNS45MzI2IDEzLjMzNTlDMjUuNzU0OSAyMC4zNjAzIDIwLjAxOSAyNS45OTk5IDEyLjk2ODggMjZMMTIuNjMzOCAyNS45OTYxQzUuNzM3NTMgMjUuODIwOSAwLjE3ODgzOCAyMC4yNDg4IDAuMDAzOTA2MjUgMTMuMzM1OUwwIDEzQzAgNS44MjAzMSA1LjgwNjM1IDAgMTIuOTY4OCAwTDEzLjMwMzcgMC4wMDM5MDYyNVpNMTMuMDkwOCAyMi42OTA0QzEyLjY5MTcgMjMuMDkzNyAxMi4zMjAzIDIzLjUwMzEgMTEuOTc5NSAyMy45MTQxQzEyLjMwNTQgMjMuOTQzNCAxMi42MzUyIDIzLjk2MTkgMTIuOTY4OCAyMy45NjE5QzEzLjM4ODIgMjMuOTYxOSAxMy44MDE4IDIzLjkzNDggMTQuMjA5IDIzLjg4ODdDMTMuODM5OSAyMy40NjQ1IDEzLjQ2ODIgMjMuMDY2OCAxMy4wOTA4IDIyLjY5MDRaTTcuNjM1NzQgMTguNzUyQzYuOTMyNDggMTkuNDQ0MyA2LjIyMDc5IDIwLjE4NTggNS40Nzk0OSAyMC45ODA1QzYuNjc3NTEgMjIuMTExNSA4LjEyODE2IDIyLjk3NTUgOS43MzkyNiAyMy40NzQ2QzEwLjI3MzEgMjIuNzQzOCAxMC44OTE3IDIyLjAyMTUgMTEuNTc4MSAyMS4zMjIzQzEwLjM5NTYgMjAuMzU2OCA5LjExNTI1IDE5LjUzNTUgNy42MzU3NCAxOC43NTJaTTE4LjI5MzkgMTguNzMxNEMxNy44MTcgMTkuMDAzMyAxNy4zNDc1IDE5LjI5MjYgMTYuODg4NyAxOS41OTU3QzE2LjA3ODEgMjAuMTMxMyAxNS4zMDgxIDIwLjcwODEgMTQuNTkyOCAyMS4zMDk2QzE1LjIyMTEgMjEuOTQwNyAxNS44MzYgMjIuNjI5IDE2LjQ0OTIgMjMuMzg5NkMxNy45NTk1IDIyLjg4MDkgMTkuMzIyIDIyLjA1MTkgMjAuNDU3IDIwLjk4MDVDMTkuNzA5MiAyMC4xNzY4IDE4Ljk5NjcgMTkuNDI5MiAxOC4yOTM5IDE4LjczMTRaTTEyLjgxODQgMTQuNTE5NUMxMS41Mzk1IDE1LjMzNDcgMTAuMzYzIDE2LjI0NzIgOS4yMDExNyAxNy4yODEyQzEwLjYxNzkgMTguMDcwMSAxMS44ODYzIDE4LjkyMDggMTMuMDgwMSAxOS45MjA5QzEzLjkxNzkgMTkuMjAxNyAxNC44MTk5IDE4LjUxOTcgMTUuNzY0NiAxNy44OTU1QzE2LjA4OTEgMTcuNjgxMiAxNi40MTk0IDE3LjQ3MiAxNi43NTQ5IDE3LjI3MDVDMTUuNjEwOCAxNi4yNDA1IDE0LjQ0ODcgMTUuMzI1OCAxMy4xNjUgMTQuNDkzMkMxMy4xMTUgMTQuNDYwNyAxMy4wNjQxIDE0LjQyOTcgMTMuMDEzNyAxNC4zOTc1QzEyLjk0ODQgMTQuNDM4MiAxMi44ODMgMTQuNDc4MyAxMi44MTg0IDE0LjUxOTVaTTIuNTkyNzcgMTYuNDQ3M0MyLjk1MDQ2IDE3LjUzMDcgMy40NzA5NSAxOC41Mzg2IDQuMTI2OTUgMTkuNDQyNEM0LjY2MDQ4IDE4Ljg3MjUgNS4xODI4NiAxOC4zMjM2IDUuNzA0MSAxNy43OTc5QzQuNzUyNDMgMTcuMzU2MiAzLjcyMTU4IDE2LjkxMjkgMi41OTI3NyAxNi40NDczWk0yMy4yNzkzIDE2LjYzOTZDMjIuMjU0NyAxNi45MTI3IDIxLjIxOSAxNy4yOTEzIDIwLjE5OTIgMTcuNzU1OUMyMC43Mjk4IDE4LjI5NDQgMjEuMjYzOSAxOC44NTU4IDIxLjgxMDUgMTkuNDQxNEMyMi40MjczIDE4LjU5MTUgMjIuOTI0NyAxNy42NDk5IDIzLjI3OTMgMTYuNjM5NlpNMi40NDUzMSAxMC4wMzUyQzIuMTgxNjkgMTAuOTc4MiAyLjAzODA5IDExLjk3MjEgMi4wMzgwOSAxM0MyLjAzODA5IDEzLjM1MDggMi4wNTU3NyAxMy42OTc3IDIuMDg3ODkgMTQuMDRDNC4wMzI3NCAxNC44MjMyIDUuNzM2NzIgMTUuNTQyOCA3LjI2ODU1IDE2LjI4MzJDOC40NzYzOCAxNS4xNjU4IDkuNzA1MDQgMTQuMTU4OSAxMS4wMzgxIDEzLjI1MkM4Ljc2ODI0IDEyLjA2MDMgNi4wMzk0MiAxMS4wMTg5IDIuNDQ1MzEgMTAuMDM1MlpNMjMuNTczMiAxMC4zNDE4QzIwLjAzODggMTEuMTU0IDE3LjMwOTggMTIuMTA5MiAxNS4wMDQ5IDEzLjI3NTRDMTYuMzAxNCAxNC4xNzUzIDE3LjQ4NSAxNS4xNTcgMTguNjQ1NSAxNi4yMzkzQzIwLjMxNzcgMTUuNDEyOSAyMi4wNjgxIDE0Ljc3NTggMjMuODAzNyAxNC40MjI5QzIzLjg2MzkgMTMuOTU3IDIzLjg5OTQgMTMuNDgyNCAyMy44OTk0IDEzQzIzLjg5OTQgMTIuMDgyOSAyMy43ODQ3IDExLjE5MjkgMjMuNTczMiAxMC4zNDE4Wk0xMi45Njg4IDIuMDM4MDlDOC42ODIyNyAyLjAzODA5IDQuOTY5MzUgNC41MTQ4NyAzLjE3ODcxIDguMTIyMDdDNy4zMTk1MiA5LjI2NzQ2IDEwLjQyIDEwLjUxMzkgMTMuMDI4MyAxMi4wMjA1QzE1LjY5NSAxMC41MjM4IDE4LjgxMzIgOS4zNjE0OSAyMi44OTM2IDguNDA4MkMyMS4xNjAzIDQuNjQ2ODggMTcuMzY3MyAyLjAzODE2IDEyLjk2ODggMi4wMzgwOVoiIGZpbGw9IiMxOTQ3MUEiLz4KPC9zdmc+Cg==") no-repeat 0 0 / 25.9375px 26px;
+}
+.logo-mark-frame {
+  position: absolute;
+  left: -60.37px;
+  top: -42.41px;
+  width: 161.871px;
+  height: 98.928px;
+  overflow: hidden;
+}
+.logo-mark-frame img {
+  position: absolute;
+  left: 11.35%;
+  top: -1.69%;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+.logo-wordmark {
+  flex-shrink: 0;
+  width: 48.217px;
+  height: 20.506px;
+  display: block;
+}
+
+/* ---------- Tag pill ---------- */
+.tag-pill {
+  left: 26px;
+  top: 58px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--arth-dark);
+  color: var(--arth-green);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* ---------- Text ---------- */
+.name {
+  left: 28px;
+  top: 104px;
+  color: var(--arth-dark);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.designation {
+  left: 28px;
+  top: 136px;
+  color: var(--arth-muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.address {
+  left: 28px;
+  top: 160px;
+  width: 262px;
+  color: var(--arth-muted);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 11.5px;
+}
+
+/* ---------- Contacts ---------- */
+.contacts {
+  left: 492px;
+  top: 106px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 16px;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: var(--arth-dark);
+}
+.contact-icon img {
+  display: block;
+  width: 8.96px;
+  height: 8.96px;
+}
+.contacts a {
+  color: var(--arth-dark);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.contacts a:hover { text-decoration: underline; }
+
+/* ---------- Social icons ---------- */
+.socials {
+  left: 492px;
+  top: 170px;
+  width: 83.2px;
+  height: 16px;
+}
+.social {
+  position: absolute;
+  display: block;
+}
+.social img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.social-instagram { left: 0;       top: 0;       width: 16px;   height: 16px; }
+.social-facebook  { left: 22px;    top: -0.4px;  width: 16.8px; height: 16.8px; }
+.social-linkedin  { left: 42.7px;  top: -2.1px;  width: 20.2px; height: 20.2px; }
+.social-whatsapp  { left: 63.35px; top: -3.85px; width: 23.7px; height: 23.7px; }
+.social:hover     { opacity: 0.8; }
